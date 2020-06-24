@@ -23,6 +23,31 @@ Things you may want to cover:
 
 * ...
 
+
+## users_テーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|text|null: false, foreign_key: false|
+|mail|text|null: false, foreign_key: false|
+|pass|integer|null: false, foreign_key: false|
+|group_id|integer|null: false, foreign_key: false|
+
+## group_テーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: false|
+|group_id|integer|null: false, foreign_key: false|
+
+## message_テーブル
+|Column|Type|Options|
+|------|----|-------|
+|message|text|null: false, foreign_key: false|
+|text|text|null: false, foreign_key: false|
+|image|text|null: false, foreign_key: false|
+|user_id|integer|null: false, foreign_key: false|
+|group_id|ineteger|null: false, foreign_key: false|
+
+
 ## groups_usersテーブル
 
 |Column|Type|Options|
