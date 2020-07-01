@@ -44,7 +44,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
-
+    overflow: scroll;
     &__group-name{
       color: #ffffff;
       font-size: 15px;
@@ -67,6 +67,7 @@
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
+    overflow: scroll;
     &__left-box{
       width: 100%;
       height: 64px;
@@ -95,7 +96,27 @@
   &__message-list{
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    padding: 46px 40px;
+    overflow: scroll;
+    .message{
+      padding-bottom: 40px;
+      .upper-message{
+        display: flex;
+        margin-bottom: 10px;
+        &__user-name{
+          color: #434a54;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &__date{
+          color: #999999;
+          font-size: 12px;
+          margin-left: 10px;
+        }
+      }
+    }
   }
+  
 
   &__message-hooter{
     height: 90px;
