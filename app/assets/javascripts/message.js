@@ -77,6 +77,7 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
+      console.log(messages)
       if (messages.length !== 0) {
         //追加するHTMLの入れ物を作る
         var insertHTML = '';
@@ -85,8 +86,8 @@ $(function(){
           insertHTML += buildHTML(message)
         });
         //メッセージが入ったHTMLに、入れ物ごと追加
-        $('.messages').append(insertHTML);
-        $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+        $('.main-chat__message-list').append(insertHTML);
+        $('.main-chat__message-list').animate({ scrollTop: $('.main-chat__message-list')[0].scrollHeight});
       }
     })
     .fail(function() {

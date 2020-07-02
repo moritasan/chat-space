@@ -13,6 +13,7 @@
   height: 100vh;
   background-color: #253141;
   float: left;
+  text-decoration: none;
   &__header{
     height: 100px;
     display: flex;
@@ -45,6 +46,10 @@
     background-color: #2f3e51;
     padding: 20px 20px 0;
     overflow: scroll;
+    text-decoration: none;
+    a{
+      text-decoration: none;
+    }
     &__group-name{
       color: #ffffff;
       font-size: 15px;
