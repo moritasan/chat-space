@@ -139,3 +139,116 @@
     font-size: 13px;
   }
 }
+
+body{
+  background-color: #fffff0;
+  min-width: 650px;
+  .menubtn{
+    height: 60px;
+    width:100%;
+    max-width: 60px;
+    position: fixed;/*追記*/
+    z-index: 999;/*追記*/
+    right: 0;
+    background-color: red;
+  }
+  .w1000{
+      max-width:100%;
+      margin: 0 auto;
+      position: relative;/*追記*/
+      height:100%;/*追記*/
+      text-align: center;
+  }
+  nav{
+      background-color: black;/*ここがクリックした後の背景色*/
+      opacity: 0.7;
+      padding:3px 3% 10px;/*調整*/
+      position: absolute;/*追記*/
+      height:100%;/*追記*/
+      width:100%;/*追記*/
+      
+      .contact{
+        list-style: none;
+        padding-right: 100px;
+        color: red;
+      }
+  }
+  .content{
+      padding-top: 80px;/*追記*/
+      opacity: 0.7;
+      background-color: black;
+  }
+  .header{
+    height: 56px;
+    width: 100%;
+    opacity: 0.7;
+    color: #fff;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    &__title{
+      font-size: 30px;
+      line-height: 56px;
+    }
+  }
+  .contents{
+    margin: 30px auto 0;
+    background-color: #fff;
+    height: 2800px;
+    width: 70%;
+    overflow: scroll;
+    text-align: center;
+    .video1__box {
+      height: 100px;
+      width: 100%;
+      background-color: black;
+      margin: 0 auto;
+      opacity: 0.7;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      
+      .video1__title{
+        color: white;
+        line-height: 100px;
+        font-size: 60px;
+        
+      }
+    }
+    .video1{
+      margin: 10px 15% 50px 15%;
+      background-color: #fffff0;
+      background-image: image-url('bokashi.jpg');
+      background-size: cover;
+    }
+    .video2{
+      margin: 10px 25% 50px 25%;
+      background-color: #fffff0;
+    }
+    .video3{
+      margin: 10px 25% 50px 25%;
+      background-color: #fffff0;
+    }
+    .video4{
+      margin: 10px 25% 50px 25%;
+      background-color: #fffff0;
+    }
+    .video5{
+      margin: 10px 25% 50px 25%;
+      background-color: #fffff0;
+    }
+    .video6{
+      margin: 10px 25% 50px 25%;
+      background-color: #fffff0;
+    }
+  }
+  .footer {
+    height: 120px;
+    width: 100%;
+    background-color: #393d36;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 120px;
+  }
+}
