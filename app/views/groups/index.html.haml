@@ -1,4 +1,44 @@
-.wrapper
-  = render 'messages/side_bar'
-  -# = render 'messages/main_chat'
-%div たなか
+.w1000
+  %button.menubtn contact
+  %nav
+    %ul.contact
+      %li 連絡先
+      %li 070-△△△△-△△△△
+  .content
+%header.header
+  .header__title
+    Happy Wedding!! Megumi &amp; Takashi
+.contents
+  .video1__box
+    .video1__title
+  .video1
+    = video_tag("/assets/videos/wedding.mp4", :controls => true, :loop => true, :width =>480, :height => 300)
+  .video1__box
+    .video1__title
+      タイトル1
+  .video2
+    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+  .video1__box
+    .video1__title
+      タイトル2
+  .video3
+    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+  .video1__box
+    .video1__title
+      タイトル3
+  .video4
+    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+  .video1__box
+    .video1__title
+      タイトル4
+  .video5
+    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+  .video1__box
+    .video1__title
+      タイトル5
+  .video6
+    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+  = yield
+%footer.footer
+  Copyright ©  M.M 2020~
+%script{:src => "main.js"}
