@@ -1,44 +1,66 @@
-.w1000
-  %button.menubtn contact
-  %nav
-    %ul.contact
-      %li 連絡先
-      %li 070-△△△△-△△△△
-  .content
+
 %header.header
   .header__title
     Happy Wedding!! Megumi &amp; Takashi
 .contents
+
   .video1__box
-    .video1__title
+    .video1__title 
+      2020.11.28 結婚式余興動画
   .video1
-    = video_tag("/assets/videos/wedding.mp4", :controls => true, :loop => true, :width =>480, :height => 300)
+    = video_tag("/vtr.mp4", :controls => true, :loop => true, :width =>480, :height => 300)
   .video1__box
     .video1__title
-      タイトル1
+      撮影NG集
   .video2
-    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+    = video_tag("/ng.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
   .video1__box
     .video1__title
-      タイトル2
+      余興練習風景
   .video3
-    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+    = video_tag("/rennsyu.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
   .video1__box
     .video1__title
-      タイトル3
+      打ち合わせ
   .video4
-    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+    = video_tag("/meeting.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
   .video1__box
     .video1__title
-      タイトル4
+      ♪たしかなこと
   .video5
-    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+    = video_tag("/tashika.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
   .video1__box
     .video1__title
-      タイトル5
+      ♪愛になる
   .video6
-    = video_tag("/assets/videos/honpen.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
+    = video_tag("/aini.mp4", :controls => true, :loop => true, :width =>360, :height => 220)
   = yield
 %footer.footer
   Copyright ©  M.M 2020~
+
+
+
+
+.cp_cont
+  .cp_offcm01
+    %input#cp_toggle01{:type => "checkbox"}/
+    %label{:for => "cp_toggle01"}
+      %span
+    .cp_menu
+      %ul
+        %li
+        %li
+        %li
+          %a{:href => "#"} 動画の追加するには
+        %li
+          %a{:href => "#"} 連絡先
+        %li
+          %a{:href => "#"} photography
+        %li
+          %a{:href => "#"} 我々について
+        %li
+          %a{:href => "#"} 20_holiday
+        %li
+          = link_to "ログアウト", destroy_user_session_path ,method: :delete, class: 'btn'
 %script{:src => "main.js"}
+

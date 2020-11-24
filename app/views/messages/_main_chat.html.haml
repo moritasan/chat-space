@@ -1,22 +1,22 @@
-.main-chat
-  .main-chat__header
-    .main-chat__header__left-box
-      %h3.main-chat__header__left-box__current-group 
-        = @group.name
-      .main-chat__header__left-box__member-list 
-        Member:
-        - @group.users.each do |user|
-          = user.name
-    = link_to edit_group_path(@group), class: "main-chat__header__edit-btn " do
-      Edit
-  .main-chat__message-list
-    = render @messages
-  .main-chat__message-hooter
-    .main-chat__message-hooter__new-message
-      = form_for [@group, @message], html: { class: "main-chat__message-hooter__new-message__message-form" } do |f|
-        .main-chat__message-hooter__new-message__message-form__left
-          = f.text_field :content, class: 'main-chat__message-hooter__new-message__message-form__left__input', placeholder: 'type a message'
-          = f.label :image, class: 'main-chat__message-hooter__new-message__message-form__left__image' do
-            = icon('fas', 'image',)
-            = f.file_field :image, class: 'main-chat__message-hooter__new-message__message-form__left__image'
-        = f.submit 'Send', class: 'main-chat__message-hooter__new-message__send-btn'
+-# .main-chat
+-#   .main-chat__header
+-#     .main-chat__header__left-box
+-#       %h3.main-chat__header__left-box__current-group 
+-#         = @group.name
+-#       .main-chat__header__left-box__member-list 
+-#         Member:
+-#         - @group.users.each do |user|
+-#           = user.name
+-#     = link_to edit_group_path(@group), class: "main-chat__header__edit-btn " do
+-#       Edit
+-#   .main-chat__message-list
+-#     = render @messages
+-#   .main-chat__message-hooter
+-#     .main-chat__message-hooter__new-message
+-#       = form_for [@group, @message], html: { class: "main-chat__message-hooter__new-message__message-form" } do |f|
+-#         .main-chat__message-hooter__new-message__message-form__left
+-#           = f.text_field :content, class: 'main-chat__message-hooter__new-message__message-form__left__input', placeholder: 'type a message'
+-#           = f.label :image, class: 'main-chat__message-hooter__new-message__message-form__left__image' do
+-#             = icon('fas', 'image',)
+-#             = f.file_field :image, class: 'main-chat__message-hooter__new-message__message-form__left__image'
+-#         = f.submit 'Send', class: 'main-chat__message-hooter__new-message__send-btn'
