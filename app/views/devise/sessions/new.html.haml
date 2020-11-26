@@ -3,9 +3,9 @@
   .header__title
     ログイン画面
   
-.contents-a
-  #account-page.account-page
-  .account-page__inner--right.user-form
+
+.account-page
+  .account-page__inner--right
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field
         .field-label
@@ -22,4 +22,4 @@
 
 
   .footer
-    Copyright ©  M.M 2020~
+    Copyright ©  20_Holiday 2020~
